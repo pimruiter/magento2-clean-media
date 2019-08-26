@@ -8,13 +8,13 @@
 namespace Sivaschenko\CleanMedia\Command;
 
 use Magento\Framework\DB\Select;
+use Magento\Framework\App\ResourceConnection;
+use Magento\Framework\Filesystem\Driver\File;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Magento\Framework\App\ResourceConnection;
 use Magento\Catalog\Model\ResourceModel\Product\Gallery;
-use Magento\Framework\Filesystem\Driver\File;
-use Symfony\Component\Console\Input\InputOption;
 
 class CatalogMedia extends Command
 {
